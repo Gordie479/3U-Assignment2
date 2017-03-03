@@ -46,15 +46,10 @@ public class A2Q1 {
                 }else if (link.countThingsInBackpack() == 7) {
                     while (link.canPickThing()) {
                         link.move();
-
                     }
                     break;
                 }
-
             }
-           
-
         }
-
     }
 }

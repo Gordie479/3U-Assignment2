@@ -43,7 +43,6 @@ public class A2Q2 {
         new Thing(hyrule, 2, 9);
         
         while(!link.canPickThing()) {
-            
             //hurdle jumping
             if(!link.frontIsClear()) {
                 link.turnLeft();
@@ -57,13 +56,11 @@ public class A2Q2 {
                 link.turnLeft();
                 link.move();
                 link.turnLeft();
-               
             //moves if there is no hurdle
             }else{
                 link.move();
             }
         }
         link.pickThing();
-
     }
 }
