@@ -24,6 +24,7 @@ public class A2Q3 {
 
         Robot link = new Robot(hyrule, 13, 12, Direction.NORTH);
 
+        //finds street 0 if on positive street number
         while (link.getStreet() > 0) {
             link.move();
             if (link.getStreet() == 0) {
@@ -33,6 +34,7 @@ public class A2Q3 {
                 break;
             }
         }
+        //finds street 0 if on negative street number
         if (link.getStreet() < 0) {
             link.turnLeft();
             link.turnLeft();
@@ -43,6 +45,7 @@ public class A2Q3 {
                 link.turnLeft();
             }
         }
+        //finds avenue 0 if on positive avenue number
         if (link.getAvenue() > 0) {
             link.turnLeft();
             link.turnLeft();
@@ -53,7 +56,7 @@ public class A2Q3 {
                 }
             }
         }
-
+        //finds avenue 0 if on negative avenue number
         while (link.getAvenue() < 0) {
             link.move();
         }

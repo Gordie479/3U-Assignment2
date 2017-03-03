@@ -22,6 +22,19 @@ public class A2QC {
     public static void main(String[] args) {
         // TODO code application logic here
         
+        
+        
+        
+        
+        
+        //not finished
+        
+        
+        
+        
+        
+        
+        
         City hyrule = new City();
         
         Robot link = new Robot(hyrule, 0, 2, Direction.SOUTH);

@@ -44,7 +44,7 @@ public class A2Q2 {
         
         while(!link.canPickThing()) {
             
-            
+            //hurdle jumping
             if(!link.frontIsClear()) {
                 link.turnLeft();
                 link.move();
@@ -57,7 +57,8 @@ public class A2Q2 {
                 link.turnLeft();
                 link.move();
                 link.turnLeft();
-                
+               
+            //moves if there is no hurdle
             }else{
                 link.move();
             }

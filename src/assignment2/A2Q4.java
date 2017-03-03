@@ -50,6 +50,7 @@ public class A2Q4 {
         new Wall(castletown, 4, 1, Direction.SOUTH);
         new Wall(castletown, 4, 1, Direction.WEST);
 
+        //infinitely repeats one side of the castle, looping around the castle
         while (true) {
             guard.move();
             guard.move();

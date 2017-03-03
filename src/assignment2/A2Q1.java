@@ -36,8 +36,10 @@ public class A2Q1 {
         new Thing(hyrule, 1, 10);
         new Thing(hyrule, 1, 11);
 
+        //checks if the front is clear
         while (link.frontIsClear()) {
             link.move();
+            //picks up 7 things then moves to finish
             if (link.canPickThing()) {
                 if(link.countThingsInBackpack() < 7){
                     link.pickThing();
